@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEC6250B-CC0E-4916-9625-92E83B7CD3BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Depo_Otomasyon</RootNamespace>
+    <AssemblyName>Depo_Otomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Depo_OtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Depo_OtomasyonDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Depo_OtomasyonDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Depo_OtomasyonDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Depo_OtomasyonDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Depo_OtomasyonDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Depo_OtomasyonDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Depo_OtomasyonDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Depo_OtomasyonDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Depo_OtomasyonDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaSayfa.Designer.cs">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaSayfaDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaSayfaDuzenle.Designer.cs">
+      <DependentUpon>FrmAnaSayfaDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGelen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGelen.Designer.cs">
+      <DependentUpon>FrmGelen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGelenSiparisDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGelenSiparisDuzenle.Designer.cs">
+      <DependentUpon>FrmGelenSiparisDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGelenSiparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGelenSiparisler.Designer.cs">
+      <DependentUpon>FrmGelenSiparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiden.Designer.cs">
+      <DependentUpon>FrmGiden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriDuzenle.Designer.cs">
+      <DependentUpon>FrmMusteriDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriler.Designer.cs">
+      <DependentUpon>FrmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSiparisDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiparisDuzenle.Designer.cs">
+      <DependentUpon>FrmSiparisDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSiparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiparisler.Designer.cs">
+      <DependentUpon>FrmSiparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYeniMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYeniMusteri.Designer.cs">
+      <DependentUpon>FrmYeniMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnaSayfa.resx">
+      <DependentUpon>FrmAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaSayfaDuzenle.resx">
+      <DependentUpon>FrmAnaSayfaDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGelen.resx">
+      <DependentUpon>FrmGelen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGelenSiparisDuzenle.resx">
+      <DependentUpon>FrmGelenSiparisDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGelenSiparisler.resx">
+      <DependentUpon>FrmGelenSiparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiden.resx">
+      <DependentUpon>FrmGiden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriDuzenle.resx">
+      <DependentUpon>FrmMusteriDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriler.resx">
+      <DependentUpon>FrmMusteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiparisDuzenle.resx">
+      <DependentUpon>FrmSiparisDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiparisler.resx">
+      <DependentUpon>FrmSiparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYeniMusteri.resx">
+      <DependentUpon>FrmYeniMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Depo_OtomasyonDataSet.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet.xss">
+      <DependentUpon>Depo_OtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet1.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet1.xss">
+      <DependentUpon>Depo_OtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet2.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet2.xss">
+      <DependentUpon>Depo_OtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet3.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet3.xss">
+      <DependentUpon>Depo_OtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet4.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet4.xss">
+      <DependentUpon>Depo_OtomasyonDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet5.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet5.xss">
+      <DependentUpon>Depo_OtomasyonDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet6.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet6.xss">
+      <DependentUpon>Depo_OtomasyonDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet7.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet7.xss">
+      <DependentUpon>Depo_OtomasyonDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet8.xsc">
+      <DependentUpon>Depo_OtomasyonDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Depo_OtomasyonDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Depo_OtomasyonDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Depo_OtomasyonDataSet8.xss">
+      <DependentUpon>Depo_OtomasyonDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
